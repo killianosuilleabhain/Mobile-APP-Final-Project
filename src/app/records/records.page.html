@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Records</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+this is the records page
+
+<ion-tabs> 
+  <!-- Tab bar -->
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button [routerLink]="['/home']" tab="Exercises">
+      Exercises
+      <ion-icon name="recording"></ion-icon>
+      <ion-label name="Exercises"></ion-label>
+    </ion-tab-button>
+    <ion-tab-button [routerLink]="['/diet']" tab="Diet">
+      <ion-icon name="restaurant"></ion-icon>
+      Diet
+      <ion-label name="Diet"></ion-label>
+    </ion-tab-button>
+    <ion-tab-button [routerLink]="['/weight-tracker']" tab="Weight Tracker">
+      <ion-icon name="podium"></ion-icon>
+      Weight Tracker
+      <ion-label name="Weight Tracker"></ion-label>
+    </ion-tab-button>
+    <ion-tab-button [routerLink]="['/records']" tab="Record">
+      <ion-icon name="body"></ion-icon>
+      Records
+      <ion-label name="Record"></ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>
+</ion-content>

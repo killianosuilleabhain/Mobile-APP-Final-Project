@@ -1,34 +1,13 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>
-      Compound Exercises
-    </ion-title>
+    <ion-title>Diet</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="Large">Workout App</ion-title>
-    </ion-toolbar>
-  </ion-header>
-  
-  <ion-list>
-    <!-- List from API Workouts -->
-    <ion-item *ngFor="let Workout of WorkoutData">
-      <ion-item-group>
-        <img src="{{Workout.picture}}">
-          <ion-label>
-            {{Workout.name}}
-          </ion-label>
-        <ion-label>
-          {{Workout.recReps}}
-        </ion-label>
-      </ion-item-group>
-    </ion-item>
-  </ion-list>
+<ion-content>
+  This is the diet Page 
+  Was meant to show the diet part of the API But had an issue and couldnt fix it so went back to last available time it worked so sorry for lack of effort
 
-  
   <ion-tabs> 
     <!-- Tab bar -->
     <ion-tab-bar slot="bottom">
@@ -54,4 +33,4 @@
       </ion-tab-button>
     </ion-tab-bar>
   </ion-tabs>
-</ion-content> 
+</ion-content>

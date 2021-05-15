@@ -1,0 +1,65 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Weight_Tracker</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-title>My weekly gym attendance is {{myStatus}}</ion-title>
+<ion-list>
+  <ion-radio-group [(ngModel)]="myStatus">
+    <!--Making data save-->
+    <ion-item>
+      <ion-label>Didnt go this week</ion-label>
+      <ion-radio value="Didnt go"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Once this week</ion-label>
+      <ion-radio value="Once"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>twice this week</ion-label>
+      <ion-radio value="Twice"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Three times this week</ion-label>
+      <ion-radio value="Three times"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Four times this week</ion-label>
+      <ion-radio value="Four times"></ion-radio>
+    </ion-item>
+  </ion-radio-group>
+</ion-list>
+<ion-button (click)="updateStatus()">Update Status</ion-button>
+
+<ion-tabs> 
+  <!-- Tab bar -->
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button [routerLink]="['/home']" tab="Exercises">
+      Exercises
+      <ion-icon name="recording"></ion-icon>
+      <ion-label name="Exercises"></ion-label>
+    </ion-tab-button>
+    <ion-tab-button [routerLink]="['/diet']" tab="Diet">
+      <ion-icon name="restaurant"></ion-icon>
+      Diet
+      <ion-label name="Diet"></ion-label>
+    </ion-tab-button>
+    <ion-tab-button [routerLink]="['/weight-tracker']" tab="Weight Tracker">
+      <ion-icon name="podium"></ion-icon>
+      Weight Tracker
+      <ion-label name="Weight Tracker"></ion-label>
+    </ion-tab-button>
+    <ion-tab-button [routerLink]="['/records']" tab="Record">
+      <ion-icon name="body"></ion-icon>
+      Records
+      <ion-label name="Record"></ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>
+</ion-content>

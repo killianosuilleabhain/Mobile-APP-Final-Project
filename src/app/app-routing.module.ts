@@ -11,6 +11,18 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'diet',
+    loadChildren: () => import('./diet/diet.module').then( m => m.DietPageModule)
+  },
+  {
+    path: 'weight-tracker',
+    loadChildren: () => import('./weight-tracker/weight-tracker.module').then( m => m.WeightTrackerPageModule)
+  },
+  {
+    path: 'records',
+    loadChildren: () => import('./records/records.module').then( m => m.RecordsPageModule)
+  },
 ];
 
 @NgModule({

@@ -1,5 +1,7 @@
 {
   "name": "projectLab",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
